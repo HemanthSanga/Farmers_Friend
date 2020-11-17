@@ -1,0 +1,23 @@
+﻿<Window x:Class="Wpf_sample1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_sample1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="575" Width="1025">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="500*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock HorizontalAlignment="Left" Height="23" FontSize="16" FontWeight="Medium" TextWrapping="Wrap" Text="Farmer's Friend" VerticalAlignment="Center" Width="120" Margin="10,0,0,0"/>
+
+        <ComboBox Name="combxfp" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Margin="922,10,0,0" FontWeight="Bold" SelectionChanged="combxfp_SelectionChanged">
+            <ComboBoxItem Name="comit_F" Content="Farmer" FontWeight="Regular" Selected="Comit_F_Selected"></ComboBoxItem>
+            <ComboBoxItem Name="comit_v" Content="Vendor" FontWeight="Regular" Selected="Comit_v_Selected"></ComboBoxItem>
+        </ComboBox>
+        <Frame Name="Frame" Content="Frame" HorizontalAlignment="Left" Height="480" VerticalAlignment="Top" Width="1000" Margin="4,0,0,0" Grid.Row="1" NavigationUIVisibility="Hidden" Navigated="Frame_Navigated"/>
+    </Grid>
+</Window>
