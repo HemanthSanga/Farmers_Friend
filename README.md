@@ -1,0 +1,2 @@
+# Farmers_Friend
+Farmer’s Friend is a Windows Desktop Application which has been developed using XAML and C#. A Farmer faces difficult situation in purchasing Seeds and Fertilizers due to the unavailability of surplus stocks in his area. Unlike the other online web applications or stores, this allows a Vendor to sell his products to Farmer and a Farmer to buy them at ease. Selection and Purchase of products are made easy along with their descriptions.
